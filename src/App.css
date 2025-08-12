@@ -1,0 +1,146 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 4em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1.5em;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Mobile-first responsive breakpoints */
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  #root {
+    padding: 0.75rem;
+  }
+  
+  .logo {
+    height: 3em;
+    padding: 0.75em;
+  }
+  
+  .card {
+    padding: 1rem;
+    margin: 0.75rem 0;
+  }
+  
+  .read-the-docs {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  #root {
+    padding: 1.25rem;
+  }
+  
+  .logo {
+    height: 4.5em;
+    padding: 1.25em;
+  }
+  
+  .card {
+    padding: 1.75em;
+  }
+}
+
+/* Tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #root {
+    padding: 1.5rem;
+  }
+  
+  .logo {
+    height: 5em;
+    padding: 1.5em;
+  }
+  
+  .card {
+    padding: 2em;
+  }
+}
+
+/* Desktop devices */
+@media (min-width: 1025px) {
+  #root {
+    padding: 2rem;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+  }
+  
+  .card {
+    padding: 2.5em;
+  }
+}
+
+/* Large desktop devices */
+@media (min-width: 1441px) {
+  #root {
+    padding: 2.5rem;
+  }
+  
+  .logo {
+    height: 7em;
+    padding: 2em;
+  }
+}
+
+/* Ensure images and content don't overflow */
+* {
+  box-sizing: border-box;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
