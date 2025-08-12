@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+# 💖 Proposal Website
 
-## Project info
+A sweet, simple website that allows users to create a personalized proposal link by entering the name of their loved one. The link can be shared with that person, and when they open it, they see a cute proposal message!
 
-**URL**: https://lovable.dev/projects/c74e5ef3-cc66-4461-aa50-543c1fb321d0
+## 🌐 Live Demo
 
-## How can I edit this code?
+[Click here to try it out!](https://your-live-link.com)
 
-There are several ways of editing your application.
+## 📝 Features
 
-**Use Lovable**
+- Enter the name of your love 💌
+- Generate a unique, shareable link 🌍
+- Personalized proposal page for your special someone 💕
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c74e5ef3-cc66-4461-aa50-543c1fb321d0) and start prompting.
+## 🚀 How It Works
 
-Changes made via Lovable will be committed automatically to this repo.
+1. User enters the name of their loved one in a form.
+2. A unique link is generated with that name in the URL (e.g., `/propose?name=Emma`).
+3. When someone opens the link, it shows a customized proposal message using the name.
 
-**Use your preferred IDE**
+## 🔧 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+- React.js
 - Tailwind CSS
+- React Router (optional, if routing is used)
+- Netlify / Vercel (for deployment)
 
-## How can I deploy this project?
+## 📸 Screenshots
 
-Simply open [Lovable](https://lovable.dev/projects/c74e5ef3-cc66-4461-aa50-543c1fb321d0) and click on Share -> Publish.
+<!-- Add screenshots here if available -->
+> _"Will you be mine, [Name]?"_ 💍
 
-## Can I connect a custom domain to my Lovable project?
+## 📦 Installation & Development
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+git clone https://https://github.com/dheerajgaurgithub/propsal
+cd proposal-website
+npm install
+npm start
