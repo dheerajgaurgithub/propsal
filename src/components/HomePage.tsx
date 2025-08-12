@@ -31,7 +31,7 @@ const HomePage = ({ onProposeClick, onAboutClick }: HomePageProps) => {
           {/* Left Side - Text */}
           <div className="text-center lg:text-left space-y-4 md:space-y-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="text-gray-800">Afraid To </span>
+              <span className="text-gray-800">Scared To </span>
               <span className="bg-gradient-to-r from-rose-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
                 Propose
               </span>
