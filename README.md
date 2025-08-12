@@ -4,7 +4,7 @@ A sweet, simple website that allows users to create a personalized proposal link
 
 ## 🌐 Live Demo
 
-[Click here to try it out!](https://your-live-link.com)
+[[Click here to try it out!](https://your-live-link.com)](https://proposedheeraj.netlify.app/)
 
 ## 📝 Features
 
