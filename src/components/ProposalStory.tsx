@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Heart, ArrowRight } from "lucide-react";
+import { Heart, ArrowRight, ExternalLink } from "lucide-react";
 import kenichiShizukaSakura from "@/assets/kenichi-shizuka-sakura.jpg";
 import kenichiShizukaFlowers from "@/assets/kenichi-shizuka-flowers.jpg";
 import kenichiShizukaPark from "@/assets/kenichi-shizuka-park.jpg";
@@ -99,6 +99,10 @@ const ProposalStory = ({ partnerName = "My Love", replyUrl }: ProposalStoryProps
     setResponse(answer);
   };
 
+  const handleWebsiteRedirect = () => {
+    window.open('https://proposedheeraj.netlify.app/', '_blank');
+  };
+
   // Success response (Yes)
   if (response === 'yes') {
     return (
@@ -119,14 +123,23 @@ const ProposalStory = ({ partnerName = "My Love", replyUrl }: ProposalStoryProps
             <span className="animate-bounce delay-300">👫</span>
             <span className="animate-bounce delay-400">❤️</span>
           </div>
-          {replyUrl && (
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            {replyUrl && (
+              <Button
+                onClick={() => window.open(replyUrl, '_blank')}
+                className="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-600 hover:from-emerald-600 hover:via-teal-600 hover:to-cyan-700 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                💬 Message Me Back
+              </Button>
+            )}
             <Button
-              onClick={() => window.open(replyUrl, '_blank')}
-              className="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-600 hover:from-emerald-600 hover:via-teal-600 hover:to-cyan-700 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              onClick={handleWebsiteRedirect}
+              className="bg-gradient-to-r from-purple-500 via-pink-500 to-rose-600 hover:from-purple-600 hover:via-pink-600 hover:to-rose-700 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              💬 Message Me Back
+              🌐 Visit Website
+              <ExternalLink className="w-4 h-4 ml-2" />
             </Button>
-          )}
+          </div>
         </div>
       </div>
     );
@@ -149,6 +162,23 @@ const ProposalStory = ({ partnerName = "My Love", replyUrl }: ProposalStoryProps
           <p className="text-sm sm:text-base md:text-lg text-slate-500">
             Take care, {partnerName} 🤝
           </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            {replyUrl && (
+              <Button
+                onClick={() => window.open(replyUrl, '_blank')}
+                className="bg-gradient-to-r from-slate-500 via-blue-500 to-indigo-600 hover:from-slate-600 hover:via-blue-600 hover:to-indigo-700 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                💬 Message Me
+              </Button>
+            )}
+            <Button
+              onClick={handleWebsiteRedirect}
+              className="bg-gradient-to-r from-gray-500 via-slate-500 to-gray-600 hover:from-gray-600 hover:via-slate-600 hover:to-gray-700 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              🌐 Visit Website
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </Button>
+          </div>
         </div>
       </div>
     );
